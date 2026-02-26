@@ -41,6 +41,7 @@ jobs:
       - name: Build
         env:
           BASE_PATH: '/mojolc-mantine/'
+          VITE_EVENTS_PASSCODE: ${{ secrets.VITE_EVENTS_PASSCODE }}
         run: yarn build
       - name: Setup Pages
         uses: actions/configure-pages@v5
