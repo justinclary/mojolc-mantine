@@ -13,6 +13,7 @@ import { useDisclosure } from '@mantine/hooks';
 import { IconBrandInstagram } from '@tabler/icons-react';
 import classes from './Header.module.css';
 import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle';
+import mojoLogo from '../../assets/MojoLogo.png';
 
 export interface NavItem {
   label: string;
@@ -54,7 +55,7 @@ export function HeaderMenu({ navItems }: { navItems: NavItem[] }) {
           aria-label="Mojo Lacrosse Club home"
         >
           <Image
-            src={`${import.meta.env.BASE_URL}static/MojoLogo.png`}
+            src={mojoLogo}
             alt="MOJO Lacrosse Club Logo"
             className={classes.logoImage}
           />
