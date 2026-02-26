@@ -54,7 +54,7 @@ export function HeaderMenu({ navItems }: { navItems: NavItem[] }) {
           aria-label="Mojo Lacrosse Club home"
         >
           <Image
-            src="/static/MojoLogo.png"
+            src={`${import.meta.env.BASE_URL}static/MojoLogo.png`}
             alt="MOJO Lacrosse Club Logo"
             className={classes.logoImage}
           />
